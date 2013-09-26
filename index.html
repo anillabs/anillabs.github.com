@@ -1,59 +1,84 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Anil Labs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet" />
-    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
-	<link href="http://twitter.github.com/bootstrap/assets/css/docs.css" rel="stylesheet">
-    <link href="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
-	<style type="text/css">
-	.headline{ font-size: 22px !important; font-weight: 300 !important; line-height: 36px !important; text-rendering: optimizelegibility !important;}
+    <meta name="description" content="Anil Kumar Panigrahi - Developer,Blogger and Founder of Anil Labs">
+    <meta name="author" content="Anil Kumar Panigrahi">
+
+    <title>Anil Labs</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <style>
+	body {margin-top: 60px;}
 	</style>
+
   </head>
-   <body data-spy="scroll" data-target=".subnav" data-offset="50">	
-   <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="./index.html">Anil Labs</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active">
-                <a href="./index.html">Overview</a>
-              </li>
-              <li class="">
-                <a href="http://www.anil2u.info/advertise-with-us/">Advertise</a>
-              </li>
-              <li class="">
-                <a href="http://www.anil2u.info/myprofile/">Anil Labs Profile</a>
-              </li>
-             
-              
-            </ul>
-          </div>
+          <a class="navbar-brand" href="index.html">Anil Labs</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+      <div class="row">
+       <div class="col-lg-7">
+          <img class="img-responsive img-rounded" src="http://farm8.staticflickr.com/7371/9733322397_23b675e436_z.jpg">
+        </div>
+        <div class="col-lg-4">
+          <h1>Execute PHP Code in WordPress Widget</h1>
+          <p>Hi friends, In the earlier post learned how to create wordpress widgets and in this post I will explain how to execute PHP code in your widgets in WordPress. Recently I have done in my “About The Author” widget in my blog. I have done this for get and display the Author image in the widget!</p>
+          <a class="btn btn-primary btn-lg" target="_blank" href="http://www.anil2u.info/2013/09/execute-php-code-in-wordpress-widget/">Complete Information!</a>
         </div>
       </div>
-    </div>
-	<body>
-  <div class="container-fluid">
-  <div class="row-fluid">
-    <div class="span2">
-      <!--Sidebar content-->
-    </div>
-	<div class="span10">
-      <!--Body content--><script src="http://feeds.feedburner.com/anil-labs?format=sigpro" type="text/javascript" ></script>
-    </div>
-    <div class="span2"></div>
-    <div class="span10"><h1>Anil Kumar Panigrahi Production</h1></div>
-  </div>
-</div>
-    
-  
+      <hr class="featurette-divider">
+      <div class="row">
+       <div class="col-lg-7">
+          <h2>Anil Kumar Panigrahi's Blog</h2>
+          <script src="http://feeds.feedburner.com/anil-labs?format=sigpro" type="text/javascript" ></script>
+       </div>
+       <div class="col-lg-5">
+        <iframe src="//player.vimeo.com/video/73140367" width="500" height="282" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/73140367">Google Drive as free CDN to your website by Anil Kumar Panigrahi</a> from <a href="http://vimeo.com/anilkumarpanigrahi">Anil Kumar Panigrahi</a> .</p>
+       </div>
+      </div>
+      <hr class="featurette-divider">
+    <!-- FOOTER -->
+      <footer>
+        <p>
+          Copyright &copy; Anil Labs 2013 &middot; Facebook &middot; Twitter &middot; Google+
+        </p>
+      </footer>
 
-</body>
+    </div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
 </html>
