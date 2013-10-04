@@ -7,10 +7,7 @@
     <meta name="author" content="Anil Kumar Panigrahi">
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <!-- bxSlider Javascript file -->
-    <script src="js/jquery.bxslider.min.js"></script>
-    <!-- bxSlider CSS file -->
-    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    
 
     <title>Anil Labs</title>
 
@@ -22,16 +19,7 @@
 	body {margin-top: 60px;}
 	</style>
 	
-     <script>
-     	$(document).ready(function(){
-  		$('.slider1').bxSlider({
-    			slideWidth: 200,
-    			minSlides: 1,
-    			maxSlides: 1,
-    			slideMargin: 10
-  		});
-	});
-     </script>	
+     
 
   </head>
 
@@ -62,7 +50,24 @@
 
     <div class="container">
       
-      <div class="slider1">
+     
+      <div id="myCarousel" class="carousel slide">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item">…</div>
+    <div class="item">…</div>
+    <div class="item">…</div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+
       <div class="row slide">
        <div class="col-lg-7">
           <img class="img-responsive img-rounded" src="http://farm3.staticflickr.com/2806/10068528233_d3eab80108_o.jpg">
@@ -85,7 +90,7 @@
         </div>
       </div>
       <hr class="featurette-divider">
-      </div>
+     
       
       <div class="row">
        <div class="col-lg-7">
