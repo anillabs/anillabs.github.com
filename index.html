@@ -31,7 +31,7 @@
 
   </head>
 
-  <body>
+  <body onload="myFunction();">
 
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
@@ -85,7 +85,7 @@
     <!-- FOOTER -->
       <footer>
         <p>
-          Copyright &copy; Anil Labs 2015 &middot; <a href="https://www.facebook.com/anil.labs" target="_blank">Facebook</a> &middot; <a href="https://twitter.com/anil2u" target="_blank">Twitter</a> &middot; <a href="https://plus.google.com/u/0/+AnilKumarPanigrahi" target="_blank">Google+</a>
+		<span id="copyright"></span> &middot; <a href="https://www.facebook.com/anil.labs" target="_blank">Facebook</a> &middot; <a href="https://twitter.com/anil2u" target="_blank">Twitter</a> &middot; <a href="https://plus.google.com/u/0/+AnilKumarPanigrahi" target="_blank">Google+</a>
         </p>
       </footer>
 
@@ -96,5 +96,12 @@
     <!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+	  <script>
+function myFunction() {
+  var d = new Date();
+  var n = d.getFullYear();
+  document.getElementById("copyright").innerHTML = 'Copyright &copy; Anil Labs '+n;
+}
+</script>
   </body>
 </html>
