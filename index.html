@@ -75,33 +75,12 @@
       <div class="row">
        <div class="col-lg-7">
           <h2>Anil Kumar Panigrahi's Blog</h2> 
-	       <div id="bloglinks"></div>
-          <script>
-        const RSS_URL = `https://www.anillabs.com/feed/`;
-
-fetch(RSS_URL)
-  .then(response => response.text())
-  .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
-  .then(data => {
-    console.log(data);
-    const items = data.querySelectorAll("item");
-    let html = ``;
-    items.forEach(el => {
-      html += `
-        <article>
-          <h2>
-            <a href="${el.querySelector("link").innerHTML}" target="_blank" rel="noopener">
-              ${el.querySelector("title").innerHTML}
-            </a>
-          </h2>
-        </article>
-      `;
-    });
-	  const target = document.getElementById('bloglinks');
-	  target.innerHTML += html;
-    
-  });
-    </script>
+	       <ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="https://www.anillabs.com/2023/11/05/a-beginners-guide-to-microsoft-power-platform/">A Beginner’s Guide to Microsoft Power Platform</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="https://www.anillabs.com/2023/10/29/the-php-way-to-pdf-seamless-html-to-pdf-conversion/">The PHP Way to PDF: Seamless HTML to PDF Conversion</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="https://www.anillabs.com/2023/10/08/creating-engaging-ai-powered-videos-with-kapwing-and-uploading-to-youtube/">Creating Engaging AI-Powered Videos with Kapwing and Uploading to YouTube</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="https://www.anillabs.com/2023/09/24/ssl-by-cloudflare-transforming-wordpress-blogs-into-safer/">SSL by Cloudflare: Transforming WordPress Blogs into Safer</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="https://www.anillabs.com/2023/09/16/power-up-your-business-with-microsoft-power-platform/">Power Up Your Business with Microsoft Power Platform</a></li>
+</ul>
        </div>
        <div class="col-lg-5">
         <iframe src="//player.vimeo.com/video/73140367" width="500" height="282" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/73140367">Google Drive as free CDN to your website by Anil Kumar Panigrahi</a> from <a href="http://vimeo.com/anilkumarpanigrahi">Anil Kumar Panigrahi</a> .</p>
