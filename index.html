@@ -76,24 +76,28 @@
        <div class="col-lg-7">
           <h2>Anil Kumar Panigrahi's Blog</h2>
           <script>
-        // URL of your FeedBurner RSS feed
-        var feedUrl = "https://feeds.feedburner.com/anil-labs";
-        
-        // Function to fetch and display the feed content
-        function displayFeed() {
-            fetch(feedUrl)
-                .then(response => response.text())
-                .then(data => {
-                    var feedContent = document.getElementById("feed-content");
-                    feedContent.innerHTML = data;
-                })
-                .catch(error => {
-                    console.error('Error fetching feed:', error);
-                });
-        }
-        
-        // Call the function to display the feed content
-        displayFeed();
+        const RSS_URL = `https://codepen.io/spark/feed`;
+
+fetch(RSS_URL)
+  .then(response => response.text())
+  .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+  .then(data => {
+    console.log(data);
+    const items = data.querySelectorAll("item");
+    let html = ``;
+    items.forEach(el => {
+      html += `
+        <article>
+          <h2>
+            <a href="${el.querySelector("link").innerHTML}" target="_blank" rel="noopener">
+              ${el.querySelector("title").innerHTML}
+            </a>
+          </h2>
+        </article>
+      `;
+    });
+    document.body.insertAdjacentHTML("beforeend", html);
+  });
     </script>
        </div>
        <div class="col-lg-5">
