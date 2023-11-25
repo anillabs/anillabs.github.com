@@ -74,9 +74,10 @@
       
       <div class="row">
        <div class="col-lg-7">
-          <h2>Anil Kumar Panigrahi's Blog</h2>
+          <h2>Anil Kumar Panigrahi's Blog</h2> 
+	       <div id="bloglinks"></div>
           <script>
-        const RSS_URL = `https://codepen.io/spark/feed`;
+        const RSS_URL = `https://www.anillabs.com/feed/`;
 
 fetch(RSS_URL)
   .then(response => response.text())
@@ -96,7 +97,9 @@ fetch(RSS_URL)
         </article>
       `;
     });
-    document.body.insertAdjacentHTML("beforeend", html);
+	  const target = document.getElementById('bloglinks');
+	  target.innerHTML += html;
+    
   });
     </script>
        </div>
